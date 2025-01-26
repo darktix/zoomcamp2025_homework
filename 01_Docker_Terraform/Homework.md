@@ -8,7 +8,7 @@ hostname: postgres
 port: 5432  
 --> postgres:5432  
   
-It works also with hostname: pg  
+It works also with hostname: db  
   
 # Question 3  
   
@@ -106,3 +106,12 @@ SQL Command:
         zdo."Zone"  
     ORDER BY   
         MAX(tip_amount) DESC;  
+
+# Question 7
+Which of the following sequences, respectively, describes the workflow for:
+
+1. Downloading the provider plugins and setting up backend,
+2. Generating proposed changes and auto-executing the plan
+3. Remove all resources managed by terraform`
+
+Answer: terraform init, terraform apply -auto-approve, terraform destroy
